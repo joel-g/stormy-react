@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import Home from './home';
 import Services from './services';
 import About from './about';
-import Contact from '.contact';
+import Contact from './contact';
+import Nav from './nav';
 import './App.css';
 
 

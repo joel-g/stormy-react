@@ -2,11 +2,11 @@ import React from 'react';
 // import PropTypes from 'proptypes';
 
 function Home() {
-  render() {
-    return (
-      <div>
-        HOME PAGE
-      </div>
-    )
-  }
+  return (
+    <div>
+      HOME PAGE
+    </div>
+  )
 }
+
+export default Home;

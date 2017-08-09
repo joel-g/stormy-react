@@ -12,11 +12,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-
+      currentPage: 'home'
     }
   }
-  
+
+
   render() {
+    // handle which page displays here
     return (
       <div className="App">
         <Nav />

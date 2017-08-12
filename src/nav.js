@@ -4,6 +4,7 @@ import React from 'react';
 function Nav() {
   return (
     <nav>
+      <h1 className='title'>Stormy Guerra</h1>
       <div className='button'>
         Home
       </div>

@@ -24,18 +24,27 @@
 }
 
 .button {
-  background-color: #FFC200;
-  color: #581F47;
+  background-color: #3CD8BE;
+  color: #265865;
   display: inline-block;
   font-size: 1.8em;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px 20px;
+  margin: 20px 10px;
   border: solid 2px black;
-  box-shadow: 5px 5px 15px #888888;
+  box-shadow: 5px 5px 15px #3087B4;
   border-radius: 4px;
 }
 
 .button:hover {
-  background-color: #581F47;
-  color: #FFC200;
+  background-color: #265865;
+  color: #3CD8BE;
+}
+
+.title {
+  float: left;
+  margin-left: 20px;
+}
+
+nav {
+  background-color: #3E4EB5;
 }

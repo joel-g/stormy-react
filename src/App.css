@@ -42,7 +42,10 @@
 
 .title {
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
+  color: #3087B4;
+  font-size: 2em;
+  font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';
 }
 
 nav {

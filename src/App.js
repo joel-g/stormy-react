@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Home from './home';
 import Services from './services';
 import About from './about';
@@ -16,13 +15,22 @@ class App extends Component {
     }
   }
 
-
   render() {
-    // handle which page displays here
+    let display;
+    if (this.state.currentPage == 'home') {
+      display = <Home />
+    } else if (this.state.currentPage == 'services') {
+      display = <Services />
+    } else if (this.state.currentPage == 'about') {
+      display = <About />
+    } else if (this.state.currentPage == 'contact') {
+      display = <Contact />
+    };
+
     return (
       <div className="App">
         <Nav />
-        <Services />
+        {display}
       </div>
     );
   }

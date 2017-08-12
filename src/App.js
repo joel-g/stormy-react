@@ -17,13 +17,13 @@ class App extends Component {
 
   render() {
     let display;
-    if (this.state.currentPage == 'home') {
+    if (this.state.currentPage === 'home') {
       display = <Home />
-    } else if (this.state.currentPage == 'services') {
+    } else if (this.state.currentPage === 'services') {
       display = <Services />
-    } else if (this.state.currentPage == 'about') {
+    } else if (this.state.currentPage === 'about') {
       display = <About />
-    } else if (this.state.currentPage == 'contact') {
+    } else if (this.state.currentPage === 'contact') {
       display = <Contact />
     };
 

@@ -22,3 +22,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.button {
+  background-color: #FFC200;
+  color: #581F47;
+  display: inline-block;
+  font-size: 1.8em;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px black;
+  box-shadow: 5px 5px 15px #888888;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #581F47;
+  color: #FFC200;
+}

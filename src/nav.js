@@ -4,7 +4,18 @@ import React from 'react';
 function Nav() {
   return (
     <nav>
-      NAV BAR PAGE
+      <div className='button'>
+        Home
+      </div>
+      <div className='button'>
+        About
+      </div>
+      <div className='button'>
+        Services
+      </div>
+      <div className='button'>
+        Contact
+      </div>
     </nav>
   )
 }

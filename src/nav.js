@@ -9,13 +9,13 @@ class Nav extends Component {
       <div onClick={ e =>this.props.clickHandler(e) } className='button'>
       Home
       </div>
-      <div className='button'>
+      <div onClick={ e =>this.props.clickHandler(e) } className='button'>
       About
       </div>
-      <div className='button'>
+      <div onClick={ e =>this.props.clickHandler(e) } className='button'>
       Services
       </div>
-      <div className='button'>
+      <div onClick={ e =>this.props.clickHandler(e) } className='button'>
       Contact
       </div>
       </nav>

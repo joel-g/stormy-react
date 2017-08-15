@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import Home from './home';
 import Services from './services';
 import About from './about';
@@ -9,25 +10,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentPage: 'home'
+      currentPage: 'Home'
     }
   }
 
   navClickHandler(e){
     console.log('test')
-    // console.log(e.target.text)
-    // this.setState({})
+    console.log(e.target)
+    console.log($(e.target).text())
+    this.setState({currentPage: $(e.target).text()})
   }
 
   render() {
     let display;
-    if (this.state.currentPage === 'home') {
+    if (this.state.currentPage === 'Home') {
       display = <Home clickHandler={e => this.navClickHandler(e)} />
-    } else if (this.state.currentPage === 'services') {
+    } else if (this.state.currentPage === 'Services') {
       display = <Services />
-    } else if (this.state.currentPage === 'about') {
+    } else if (this.state.currentPage === 'About') {
       display = <About />
-    } else if (this.state.currentPage === 'contact') {
+    } else if (this.state.currentPage === 'Contact') {
       display = <Contact />
     };
 

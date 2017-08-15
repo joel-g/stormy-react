@@ -15,16 +15,13 @@ class App extends Component {
   }
 
   navClickHandler(e){
-    console.log('test')
-    console.log(e.target)
-    console.log($(e.target).text())
     this.setState({currentPage: $(e.target).text()})
   }
 
   render() {
     let display;
     if (this.state.currentPage === 'Home') {
-      display = <Home clickHandler={e => this.navClickHandler(e)} />
+      display = <Home />
     } else if (this.state.currentPage === 'Services') {
       display = <Services />
     } else if (this.state.currentPage === 'About') {

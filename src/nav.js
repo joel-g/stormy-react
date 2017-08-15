@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import PropTypes from 'proptypes';
 
-function Nav() {
-  return (
-    <nav>
+class Nav extends Component {
+  render() {
+    return(
+      <nav>
       <h1 className='title'>Stormy Guerra</h1>
-      <div className='button'>
-        Home
+      <div onClick={ e =>this.props.clickHandler(e) } className='button'>
+      Home
       </div>
       <div className='button'>
-        About
+      About
       </div>
       <div className='button'>
-        Services
+      Services
       </div>
       <div className='button'>
-        Contact
+      Contact
       </div>
-    </nav>
-  )
+      </nav>
+    )
+  }
 }
 
 export default Nav;

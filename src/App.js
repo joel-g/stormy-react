@@ -13,14 +13,16 @@ class App extends Component {
     }
   }
 
-  function navClickHandler(e){
-    console.log($(e.target.text))
+  navClickHandler(e){
+    console.log('test')
+    // console.log(e.target.text)
+    // this.setState({})
   }
 
   render() {
     let display;
     if (this.state.currentPage === 'home') {
-      display = <Home />
+      display = <Home clickHandler={e => this.navClickHandler(e)} />
     } else if (this.state.currentPage === 'services') {
       display = <Services />
     } else if (this.state.currentPage === 'about') {
@@ -31,7 +33,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Nav />
+        <Nav clickHandler={e => this.navClickHandler(e)}/>
         {display}
       </div>
     );

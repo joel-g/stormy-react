@@ -27,8 +27,8 @@
   background-color: #3CD8BE;
   color: #265865;
   display: inline-block;
-  font-size: 1.8em;
-  padding: 5px 20px;
+  font-size: 1.4em;
+  padding: 3px 15px;
   margin: 20px 10px;
   border: solid 2px black;
   box-shadow: 5px 5px 15px #3087B4;
@@ -42,8 +42,9 @@
 }
 
 .title {
-  float: left;
-  margin-left: 10px;
+  position: absolute;
+  left: 12%;
+  margin-top: 18px;
   color: #3087B4;
   font-size: 2em;
   font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';

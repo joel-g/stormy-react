@@ -33,6 +33,7 @@
   border: solid 2px black;
   box-shadow: 5px 5px 15px #3087B4;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button:hover {

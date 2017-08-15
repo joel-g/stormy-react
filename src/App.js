@@ -5,14 +5,16 @@ import About from './about';
 import Contact from './contact';
 import Nav from './nav';
 import './App.css';
-
-
 class App extends Component {
   constructor() {
     super();
     this.state = {
       currentPage: 'home'
     }
+  }
+
+  function navClickHandler(e){
+    console.log($(e.target.text))
   }
 
   render() {

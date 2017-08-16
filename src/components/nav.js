@@ -5,7 +5,6 @@ class Nav extends Component {
   render() {
     return(
       <nav>
-        <h1 className='stormy'>Stormy Guerra</h1>
         <div onClick={ e =>this.props.clickHandler(e) } className='button'>
         Home
         </div>

@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
+import $ from 'jquery'
+import '../Nav.css';
 // import PropTypes from 'proptypes';
 
 class Nav extends Component {
+
   render() {
     return(
       <nav>
-        <div onClick={ e =>this.props.clickHandler(e) } className='button'>
+        <button onClick={ e =>this.props.clickHandler(e) } className='btn'>
         Home
-        </div>
-        <div onClick={ e =>this.props.clickHandler(e) } className='button'>
-        About
-        </div>
-        <div onClick={ e =>this.props.clickHandler(e) } className='button'>
+      </button>
+          <button onClick={ e =>this.props.clickHandler(e) } className='btn'>
+            About
+          </button>
+          <button onClick={ e =>this.props.clickHandler(e) } className='btn'>
         Services
-        </div>
-        <div onClick={ e =>this.props.clickHandler(e) } className='button'>
+      </button>
+        <button onClick={ e =>this.props.clickHandler(e) } className='btn'>
         Contact
-        </div>
+      </button>
       </nav>
     )
   }
 }
+
 
 export default Nav;

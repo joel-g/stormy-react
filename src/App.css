@@ -2,38 +2,13 @@
   text-align: center;
 }
 
-.button {
-  background-color: #68EFAD;
-  color: #691A99;
-  display: inline-block;
-  font-size: 1.0em;
-  padding: 5px 15px;
-  margin: 10px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 2px 2px 10px black;
-}
-
-.button:hover {
-  background-color: #691A99;
-  color: #68EFAD;
-  box-shadow: 2px 2px 20px white;
-}
-
 nav {
+  z-index: -2;
   background-color: #9B26AF;
 }
 
-/*.stormy {
-  position: absolute;
-  left: 10px;
-  margin-top: 7px;
-  color: #3087B4;
-  font-size: 1.5em;
-  font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';
-}*/
-
 .home-image {
+  z-index: -10;
   background-size: cover;
   background: linear-gradient(
                      rgba(20,20,20, .5),
@@ -116,6 +91,30 @@ nav {
   margin: 3px;
 }
 
+.btn {
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	background-color: #68EFAD;
+	line-height: 42px;
+	padding: 0 30px;
+  margin: 5px 10px;
+	font-size: 20px;
+	border-radius: 30px;
+	color: rgb(40, 45, 50);
+	cursor: pointer;
+	transition: all .5s;
+	transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+	user-select: none;
+}
+	.btn:hover {
+		transform: scale(1.1, 1.1);
+	}
+
+	.btn:active{
+		transform: scale(1.05, 1.05);
+	}
+
 /* IPHONE 5 */
 @media (max-width: 358px) {
   .home-image h1 {
@@ -136,26 +135,25 @@ nav {
     margin-top: 20px;
     font-size: 1.8em;
   }
-  div.button {
-    width: 20%;
-    font-size: .9em;
-    padding: 6px 2px;
-    margin: 8px 4px;
+  button.btn {
+    line-height: 18px;
+    font-size: 14px;
+    padding: 6px 3px;
+    margin: 8px 2px;
   }
 }
 
 /* EVERYTHING ELSE */
 @media (max-width: 767px) {
-  .button {
-    width: 20%;
-    font-size: 1.0em;
+  .btn {
+    width: 22%;
+    line-height: 22px;
+    font-size: 16px;
     padding: 5px 3px;
     margin: 8px 4px;
   }
+  .btn:hover {
+    background-color: #00AA8D;
+    transform: scale(1.0, 1.0);
+  }
 }
-
-/*@media (max-width:1024px) {
-   .stormy {
-      display: none;
-   }
-}*/

@@ -11,6 +11,7 @@ function Home() {
         </div>
     <div className='business'>
       <h1>Grow your business.</h1>
+      <h3>I can help.</h3>
     </div>
     </div>
   )

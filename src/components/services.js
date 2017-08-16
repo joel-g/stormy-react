@@ -6,7 +6,7 @@ class Services extends Component {
   constructor() {
     super();
     this.state = {
-      currentDisplay: 'Staff training'
+      currentDisplay: 'None'
     }
   }
 
@@ -15,23 +15,24 @@ class Services extends Component {
   }
 
   render() {
+    let lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra massa leo, quis feugiat nisl vestibulum nec. Nunc pharetra tempor aliquet. Nulla facilisi.';
     let display;
     if (this.state.currentDisplay === 'Legal compliance') {
-      display = <p>legal compliance description</p>
+      display = <p>Legal compliance description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Staff training') {
-      display = <p>staff training description</p>
+      display = <p>Staff training description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Staff hiring') {
-      display = <p>staff hiring description</p>
+      display = <p>Staff hiring description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Tribal relations') {
-      display = <p>tribal relations description</p>
+      display = <p>Tribal relations description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Cultivation') {
-      display = <p>Cultivation description</p>
+      display = <p>Cultivation description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Genetics selection') {
-      display = <p>Genetics description</p>
+      display = <p>Genetics description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Branding') {
-      display = <p>Branding description</p>
+      display = <p>Branding description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Marketing') {
-      display = <p>Marketing description</p>
+      display = <p>Marketing description. {lorem}</p>
     };
     return (
       <div className='content'>
@@ -45,7 +46,7 @@ class Services extends Component {
           <li onClick={ e =>this.servicesClickHandler(e) }>Branding</li>
           <li onClick={ e =>this.servicesClickHandler(e) }>Marketing</li>
         </ul>
-        <div className='service-description'>
+        <div className='service-description j'>
           {display}
         </div>
       </div>

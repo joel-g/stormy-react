@@ -5,6 +5,7 @@ import Services from './components/services';
 import About from './components/about';
 import Contact from './components/contact';
 import Nav from './components/nav';
+import Footer from './components/Footer'
 import './App.css';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
       <div className="App">
         <Nav clickHandler={e => this.navClickHandler(e)}/>
         {display}
+        <Footer />
       </div>
     );
   }

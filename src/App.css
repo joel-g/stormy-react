@@ -7,30 +7,31 @@
   color: #691A99;
   display: inline-block;
   font-size: 1.0em;
-  padding: 3px 15px;
-  margin: 10px 5px;
+  padding: 5px 15px;
+  margin: 10px 10px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 2px 2px 10px black;
 }
 
 .button:hover {
-  background-color: #265865;
+  background-color: #691A99;
   color: #68EFAD;
+  box-shadow: 2px 2px 20px white;
 }
 
 nav {
   background-color: #9B26AF;
 }
 
-.stormy {
+/*.stormy {
   position: absolute;
   left: 10px;
   margin-top: 7px;
   color: #3087B4;
   font-size: 1.5em;
   font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';
-}
+}*/
 
 .home-image {
   background-size: cover;
@@ -117,17 +118,12 @@ nav {
 
 /* IPHONE 5 */
 @media (max-width: 358px) {
-   .button {
-     width: 21%;
-     font-size: .9em;
-     padding: 4px 2px;
-     margin: 5px 2px;
-   }
   .home-image h1 {
     font-size: 1.5em;
+    padding: 15px 0;
   }
   .home-image {
-    height: 220px;
+    height: 200px;
   }
   .content {
     padding: 10px;
@@ -136,20 +132,30 @@ nav {
     margin-top: 30px;
     font-size: 1.5em;
   }
+  .business h1 {
+    margin-top: 20px;
+    font-size: 1.8em;
+  }
+  div.button {
+    width: 20%;
+    font-size: .9em;
+    padding: 6px 2px;
+    margin: 8px 4px;
+  }
 }
 
 /* EVERYTHING ELSE */
 @media (max-width: 767px) {
   .button {
-    width: 21%;
+    width: 20%;
     font-size: 1.0em;
-    padding: 6px 3px;
-    margin: 8px 2px;
+    padding: 5px 3px;
+    margin: 8px 4px;
   }
 }
 
-@media (max-width:1024px) {
+/*@media (max-width:1024px) {
    .stormy {
       display: none;
    }
-}
+}*/

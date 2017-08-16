@@ -4,15 +4,11 @@ import React from 'react';
 function Home() {
   return (
     <div>
-      <div className='home-image-container'>
         <div className='home-image'>
+          <h1>Grow your product.</h1>
+          <h1>Grow your brand.</h1>
+          <h1>Grow your profits.</h1>
         </div>
-        <div className='headers'>
-        <h1>Grow your staff.</h1>
-        <h1>Grow your brand.</h1>
-        <h1>Grow your profits.</h1>
-        </div>
-      </div>
     <div className='business'>
       <h1>Grow your business.</h1>
     </div>

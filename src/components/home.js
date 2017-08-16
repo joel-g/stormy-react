@@ -10,7 +10,7 @@ function Home() {
           <h1>Grow your profits.</h1>
         </div>
     <div className='business'>
-      <h1>Grow your business.</h1>
+      <h1 className='header'>Grow your business.</h1>
       <h3>I can help.</h3>
     </div>
     </div>

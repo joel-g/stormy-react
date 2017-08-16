@@ -35,8 +35,8 @@ class Services extends Component {
       display = <p>Marketing description. {lorem}</p>
     };
     return (
-      <div className='content business'>
-        <h1>Get help with:</h1>
+      <div className='content'>
+        <h1 className='page-header'>Services</h1>
         <ul className='services-list'>
           <li onClick={ e =>this.servicesClickHandler(e) }>Legal compliance</li>
           <li onClick={ e =>this.servicesClickHandler(e) }>Staff training</li>

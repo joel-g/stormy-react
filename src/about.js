@@ -3,8 +3,8 @@ import React from 'react';
 
 function About() {
   return (
-    <div>
-      ABOUT PAGE
+    <div className='content'>
+      <p>Stormy Guerra has been in the marijuana business for 10 years.</p>
     </div>
   )
 }

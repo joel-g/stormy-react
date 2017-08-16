@@ -27,50 +27,78 @@
   background-color: #3CD8BE;
   color: #265865;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.0em;
   padding: 3px 15px;
-  margin: 20px 10px;
-  border: solid 2px black;
-  /*box-shadow: 5px 5px 15px #3087B4;*/
-  border-radius: 4px;
+  margin: 10px 5px;
+  border: solid 1px black;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 .button:hover {
   background-color: #265865;
   color: #3CD8BE;
-  border: solid 2px silver;
+  border: solid 1px silver;
 }
 
 .stormy {
   position: absolute;
-  left: 12%;
-  margin-top: 18px;
+  left: 10px;
+  margin-top: 7px;
   color: #3087B4;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';
 }
 
-.home {
+.home-image-container {
+  background-color: black;
+  height: 250px;
+}
+
+.home-image {
   background: url('images/purple-weed.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
   height: 250px;
-  opacity: .8;
+  opacity: .4;
+  position: absolute;
 }
 
-.home h1 {
+.headers h1 {
   color: white;
-  opacity: 1.0;
   font-size: 2.4em;
-  margin: 0 0 20px 0;
+  margin: 0;
+  padding: 15px 0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
+.business {
+  opacity: 1.0;
+}
+
+.content {
+  margin: 8px
+}
 
 nav {
   background-color: #3E4EB5;
+}
+
+@media (max-width: 767px) {
+   .button {
+     width: 15%;
+     font-size: 0.8em;
+     padding: 8px 8px;
+     margin: 8px 3px;
+   }
+}
+
+@media (max-width:1024px) {
+   .stormy {
+      display: none;
+   }
 }

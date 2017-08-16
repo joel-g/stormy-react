@@ -31,7 +31,7 @@
   padding: 3px 15px;
   margin: 20px 10px;
   border: solid 2px black;
-  box-shadow: 5px 5px 15px #3087B4;
+  /*box-shadow: 5px 5px 15px #3087B4;*/
   border-radius: 4px;
   cursor: pointer;
 }
@@ -39,9 +39,10 @@
 .button:hover {
   background-color: #265865;
   color: #3CD8BE;
+  border: solid 2px silver;
 }
 
-.title {
+.stormy {
   position: absolute;
   left: 12%;
   margin-top: 18px;
@@ -56,11 +57,18 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
-  opacity: 0.3;
+  height: 250px;
+  opacity: .8;
 }
 
-/*<img src="https://3fybkfrr10x3tgp41p45lr3a-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/marijuana-1114713_1920-1-1440x810.jpg" style="">*/
+.home h1 {
+  color: white;
+  opacity: 1.0;
+  font-size: 2.4em;
+  margin: 0 0 20px 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
 
 nav {

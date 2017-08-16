@@ -50,6 +50,19 @@
   font-family: 'sans-serif','Brush Script Std', 'Brush Script MT', 'cursive';
 }
 
+.home {
+  background: url('images/purple-weed.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  opacity: 0.3;
+}
+
+/*<img src="https://3fybkfrr10x3tgp41p45lr3a-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/marijuana-1114713_1920-1-1440x810.jpg" style="">*/
+
+
 nav {
   background-color: #3E4EB5;
 }

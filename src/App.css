@@ -21,6 +21,7 @@
 }
 
 nav {
+  z-index: -2;
   background-color: #9B26AF;
 }
 
@@ -34,6 +35,7 @@ nav {
 }*/
 
 .home-image {
+  z-index: -10;
   background-size: cover;
   background: linear-gradient(
                      rgba(20,20,20, .5),

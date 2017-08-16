@@ -1,8 +1,9 @@
 import React from 'react';
-// import PropTypes from 'proptypes';
+import { default as Fade } from 'react-fade'
 
 function Contact() {
   return (
+    <Fade duration='0.5'>
     <div className='content'>
       <h1 className='page-header'>Contact Me</h1>
       <form className='contact-form' action='' method='POST'>
@@ -22,6 +23,7 @@ function Contact() {
       </form>
       <p>This doesn't work yet.</p>
     </div>
+   </Fade>
   )
 }
 

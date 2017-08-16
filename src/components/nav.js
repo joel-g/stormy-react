@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import $ from 'jquery'
-// import PropTypes from 'proptypes';
+
 
 class Nav extends Component {
-
   render() {
     return(
       <nav>

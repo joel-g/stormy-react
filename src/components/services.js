@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { default as Fade } from 'react-fade'
 import $ from 'jquery';
-// import PropTypes from 'proptypes';
 
 class Services extends Component {
   constructor() {
@@ -35,6 +35,7 @@ class Services extends Component {
       display = <p>Marketing description. {lorem}</p>
     };
     return (
+      <Fade duration='0.5'>
       <div className='content'>
         <h1 className='page-header'>Services</h1>
         <ul className='services-list'>
@@ -51,6 +52,7 @@ class Services extends Component {
           {display}
         </div>
       </div>
+      </Fade>
     )
   }
 }

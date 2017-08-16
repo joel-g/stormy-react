@@ -8,18 +8,16 @@ nav {
 }
 
 .home-image {
-  z-index: -10;
   background-size: cover;
   background: linear-gradient(
-                     rgba(20,20,20, .5),
-                     rgba(20,20,20, .3)),
+                     rgba(20,20,20, 0.9),
+                     rgba(20,20,20, .2)),
                      url('images/purple-weed.jpg') no-repeat center center fixed;
                      -webkit-background-size: cover;
                      -moz-background-size: cover;
                      -o-background-size: cover;
   width: 100%;
-  height: 280px;
-  opacity: 1.0;
+  height: 320px;
 }
 
 .home-image h1 {
@@ -143,7 +141,7 @@ nav {
   }
 }
 
-/* EVERYTHING ELSE */
+/* GOOD PHONES */
 @media (max-width: 767px) {
   .btn {
     width: 22%;
@@ -151,6 +149,9 @@ nav {
     font-size: 16px;
     padding: 5px 3px;
     margin: 8px 4px;
+  }
+  .home-image {
+    height: 260px;
   }
   .btn:hover {
     background-color: #00AA8D;

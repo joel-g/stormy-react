@@ -3,7 +3,8 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className='content'>
+    <div className='content business'>
+      <h1>Contact Me</h1>
       <form className='contact-form' action='' method='POST'>
       <input type='text' placeholder='Business name'></input>
       <select>

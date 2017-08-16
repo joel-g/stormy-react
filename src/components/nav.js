@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
-import '../Nav.css';
 // import PropTypes from 'proptypes';
 
 class Nav extends Component {

@@ -16,7 +16,7 @@ class Services extends Component {
 
   render() {
     let lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra massa leo, quis feugiat nisl vestibulum nec. Nunc pharetra tempor aliquet. Nulla facilisi.';
-    let display;
+    let display = <img src='src/images/outdoor-grow.jpg' alt='outdoor marijuana garden' />;
     if (this.state.currentDisplay === 'Legal compliance') {
       display = <p>Legal compliance description. {lorem}</p>
     } else if (this.state.currentDisplay === 'Staff training') {
@@ -35,8 +35,10 @@ class Services extends Component {
       display = <p>Marketing description. {lorem}</p>
     };
     return (
-      <Fade duration='0.5'>
+      <Fade duration={0.5}>
       <div className='content'>
+        <aside className='left-side-ba'>
+        </aside>
         <h1 className='page-header'>Services</h1>
         <ul className='services-list'>
           <li onClick={ e =>this.servicesClickHandler(e) }>Legal compliance</li>

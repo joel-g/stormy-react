@@ -3,7 +3,7 @@ import { default as Fade } from 'react-fade'
 
 function Home() {
   return (
-    <Fade duration='0.5'>
+    <Fade duration={0.5}>
       <div>
         <div className='home-image'>
           <h1>Grow your product.</h1>

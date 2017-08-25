@@ -77,6 +77,10 @@ nav {
   cursor: pointer;
 }
 
+.services-list li:hover {
+  text-decoration: underline;
+}
+
 .service-description {
   width: 80%;
   margin: 20px auto;

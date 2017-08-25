@@ -22,14 +22,18 @@ class App extends Component {
 
   render() {
     let display;
-    if (this.state.currentDisplay === 'Home') {
-      display = <Home />
-    } else if (this.state.currentDisplay === 'Services') {
-      display = <Services />
-    } else if (this.state.currentDisplay === 'About') {
-      display = <About />
-    } else if (this.state.currentDisplay === 'Contact') {
-      display = <Contact />
+    switch(this.state.currentDisplay) {
+      case 'Services':
+        display = <Services />
+        break;
+      case 'About':
+        display = <About />
+        break;
+      case 'Contact':
+        display = <Contact />
+        break
+      default:
+        display = <Home />
     };
 
     return (

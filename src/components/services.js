@@ -42,6 +42,9 @@ class Services extends Component {
         break;
       case 'Marketing':
         display = <p>Marketing description. {lorem}</p>
+        break;
+      default:
+        display = null
     };
 
     const services = [
@@ -62,7 +65,7 @@ class Services extends Component {
         </aside>
         <h1 className='page-header'>Services</h1>
         <ul onClick={ e =>this.servicesClickHandler(e) } className='services-list'>
-          {services.map( (s) => <li>{s}</li>)}
+          {services.map( (s) => <li key={s}>{s}</li>)}
         </ul>
         <div className='service-description j'>
           {display}

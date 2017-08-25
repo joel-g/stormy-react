@@ -3,7 +3,7 @@ import { default as Fade } from 'react-fade'
 
 function About() {
   return (
-    <Fade duration='0.5'>
+    <Fade duration={0.5}>
     <div className='content'>
       <h1 className='page-header'>About Stormy Guerra</h1>
       <p className='l'>   Stormy Guerra has been in the marijuana business for 10 years and has helped build many successful collective gardens, grow operations and retail stores.</p>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { default as Fade } from 'react-fade'
 import $ from 'jquery';
 import Home from './components/home';
 import Services from './components/services';

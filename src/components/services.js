@@ -56,8 +56,10 @@ class Services extends Component {
       ]
 
     return (
-      <Fade duration='0.5'>
+      <Fade duration={0.5}>
       <div className='content'>
+        <aside className='left-side-ba'>
+        </aside>
         <h1 className='page-header'>Services</h1>
         <ul onClick={ e =>this.servicesClickHandler(e) } className='services-list'>
           {services.map( (s) => <li>{s}</li>)}

@@ -9,7 +9,7 @@ function Contact() {
       <form className='contact-form' action='' method='POST'>
       <input type='text' placeholder='Business name'></input>
       <select>
-        <option defaultValue="unspecified" disabled selected>Business type:</option>
+        <option defaultValue="unspecified">Business type:</option>
         <option value="retail">Retail</option>
         <option value="medical">Medical</option>
         <option value="producer">Producer</option>
@@ -21,7 +21,7 @@ function Contact() {
       <input type='text' placeholder='Contact person title' name='title'></input><br />
       <button type='submit'>Submit</button>
       </form>
-      <p>This doesn't work yet.</p>
+      <p>{"This doesn't work yet."}</p>
     </div>
    </Fade>
   )

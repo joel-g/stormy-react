@@ -132,6 +132,16 @@ nav {
                        -o-background-size: 20%;
   }
 
+  .dropdown {
+    padding: 3px 34px;
+    margin: 2px;
+  }
+
+  .message {
+    width: 350px;
+    height: 100px;
+  }
+
 /* IPHONE 5 */
 @media (max-width: 358px) {
   .home-image h1 {
@@ -158,6 +168,12 @@ nav {
     padding: 6px 3px;
     margin: 8px 2px;
   }
+  .message {
+    height: 70px;
+  }
+  .about {
+    font-size: 0.9em;
+  }
 }
 
 /* GOOD PHONES */
@@ -169,6 +185,9 @@ nav {
     padding: 5px 3px;
     margin: 8px 4px;
     box-shadow: 2px 2px 5px black;
+  }
+  .message {
+    width: 175px;
   }
   .home-image {
     height: 260px;

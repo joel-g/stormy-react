@@ -142,6 +142,10 @@ nav {
     height: 100px;
   }
 
+  .form-message {
+    font-size: 1.8em;
+  }
+
 /* IPHONE 5 */
 @media (max-width: 358px) {
   .home-image h1 {

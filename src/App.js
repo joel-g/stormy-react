@@ -5,7 +5,7 @@ import Services from './components/services';
 import About from './components/about';
 import Contact from './components/contact';
 import Nav from './components/nav';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {

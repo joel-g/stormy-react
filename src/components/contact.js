@@ -1,36 +1,57 @@
-import React from 'react';
-import { default as Fade } from 'react-fade'
+import React, { Component } from 'react';
+import { default as Fade } from 'react-fade';
+import Form  from './Form';
+import $ from 'jquery';
 
-function Contact() {
-  return (
-    <Fade duration={0.5}>
-    <div className='content'>
-      <h1 className='page-header'>Contact Me</h1>
-      <form className='contact-form' action='https://formspree.io/stormyguerra@gmail.com' method='POST'>
-      <input type='text' placeholder='Your name' name='person' />
-      <input type='text' placeholder='Title' name='title' /><br />
-      <input type='text' placeholder='Email' name='_replyto' />
-      <input type='text' placeholder='Phone #' name='phone' /><br />
-      <input type='text' placeholder='Business name' name='business'></input>
-      <select className='dropdown'>
-        <option  defaultValue="unspecified" name='business-type'>Business type:</option>
-        <option value="retail">Retail</option>
-        <option value="medical">Medical</option>
-        <option value="producer">Producer</option>
-        <option value="processor">Processor</option>
-      </select><br />
-      <input type='text' placeholder='City' name='city'></input>
-      <input type='text' placeholder='State' name='state'></input><br />
-      <input type="hidden" name="_next" value="http://stormyguerra.com" />
-      <input type="hidden" name="_subject" value="Stormguerra.com" />
-      <textarea className='message' name='message'>
-        How can I help?
-      </textarea><br />
-      <button type='submit' className='btn'>Submit</button>
-      </form>
-    </div>
-   </Fade>
-  )
+
+class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {
+      currentDisplay: 'Form',
+      userMessage: '',
+      showForm: true
+    }
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e){
+    e.preventDefault();
+    $.ajax({
+        context: this,
+        url: "https://formspree.io/stormyguerra1@gmail.com",
+        method: "POST",
+        data: $('.contact-form').serialize(),
+        dataType: "json"
+    }).done(function(r){
+      $('.form-message').css('color', 'black')
+      this.setState({
+        userMessage: "Your message has been sent. Stormy responds to inquiries within 24 hours.",
+        showForm: false
+       })
+    }).fail(function(r){
+      $('.form-message').css('color', 'red')
+      this.setState({ userMessage: "Please enter a valid email address."})
+    });
+  }
+
+  render() {
+    let form;
+    if (this.state.showForm){
+      form = <Form handleSubmit={this.handleSubmit} />
+    } else { form = '' }
+    return (
+      <Fade duration={0.5}>
+      <div className='content'>
+        <h1 className='page-header'>Contact Me</h1>
+        <div className='form-message'>
+          {this.state.userMessage}
+        </div>
+        {form}
+      </div>
+     </Fade>
+    )
+  }
 }
 
 export default Contact

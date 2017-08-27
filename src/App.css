@@ -133,13 +133,17 @@ nav {
   }
 
   .dropdown {
-    padding: 3px 34px;
-    margin: 2px;
+    padding: 3px 36px;
+    margin: 0 3px;
   }
 
   .message {
-    width: 350px;
+    width: 359px;
     height: 100px;
+  }
+
+  .form-message {
+    font-size: 1.5em;
   }
 
 /* IPHONE 5 */

@@ -35,7 +35,6 @@ class Contact extends Component {
     });
   }
 
-
   render() {
     let form;
     if (this.state.showForm){

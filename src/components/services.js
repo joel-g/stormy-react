@@ -20,10 +20,10 @@ class Services extends Component {
 
     switch(this.state.currentDisplay) {
       case 'Legal compliance':
-        display = <p>Legal compliance description. {lorem}</p>
+        display = <p>{"Is your business complying with all city and state regulations? Are your employees? Let's make sure."}</p>
         break;
       case 'Staff training':
-        display = <p>Staff training description. {lorem}</p>
+        display = <p>{"Make sure your staff is following best practices to ensure customer loyalty and sales growth."}</p>
         break;
       case 'Staff hiring':
         display = <p>Staff hiring description. {lorem}</p>

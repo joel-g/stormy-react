@@ -26,7 +26,7 @@ class Services extends Component {
         display = <p>{"Make sure your staff is following best practices to ensure customer loyalty and sales growth."}</p>
         break;
       case 'Staff hiring':
-        display = <p>{'Screen, interview and hire your sales, management and security staff.'}}</p>
+        display = <p>{'Screen, interview and hire your sales, management and security staff.'}</p>
         break;
       case 'Tribal relations':
         display = <p>Tribal relations description. {lorem}</p>
